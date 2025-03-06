@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "94797374528",
+    "project_id": "mj-social-app-1",
+    "storage_bucket": "mj-social-app-1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94797374528:android:f7808e6b794fda5c1beba5",
+        "android_client_info": {
+          "package_name": "com.example.basic_social_media_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzyfvqlvDSZxRsRAZbxNK0OGnO9YhRjfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
