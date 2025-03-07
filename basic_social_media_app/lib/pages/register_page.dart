@@ -2,6 +2,7 @@
 
 import 'package:basic_social_media_app/common/helper_functions.dart';
 import 'package:basic_social_media_app/pages/login_page.dart';
+import 'package:basic_social_media_app/services/firestore_users.dart';
 import 'package:basic_social_media_app/widgets/button_widget.dart';
 import 'package:basic_social_media_app/widgets/textfield_widget.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -39,6 +40,12 @@ class _RegisterPageState extends State<RegisterPage> {
           await FirebaseAuth.instance.createUserWithEmailAndPassword(
             email: emailController.text,
             password: passwordController.text,
+          );
+          FirestoreService users = FirestoreService();
+          users.addUser(
+            emailController.text,
+            firstNameController.text,
+            lastNameController.text,
           );
           Navigator.pop(context);
           Navigator.pushReplacement(

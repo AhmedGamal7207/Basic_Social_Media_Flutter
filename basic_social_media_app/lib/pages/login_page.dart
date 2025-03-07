@@ -28,6 +28,7 @@ class LoginPage extends StatelessWidget {
 
         if (context.mounted) {
           Navigator.pop(context);
+          Navigator.pushReplacementNamed(context, "/home_page");
         }
       } on FirebaseAuthException catch (e) {
         Navigator.pop(context);
